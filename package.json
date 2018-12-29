@@ -1,0 +1,45 @@
+{
+  "name": "my_home",
+  "version": "0.1.0",
+  "homepage": "http://jarongallo.com",
+  "private": true,
+  "dependencies": {
+    "asyncawait": "^1.0.6",
+    "autoprefixer": "^7.1.4",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "concat": "^1.0.3",
+    "concurrently": "^3.5.1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "node-sass": "^4.5.3",
+    "nodemailer": "^4.6.4",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.1.2",
+    "react-scripts": "1.1.0",
+    "react-typed": "^1.1.0",
+    "typed.js": "^2.0.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "dev": "concurrently \"yarn start\" \"node server.js\"",
+    "watch:sass": "node-sass public/assets/css/sass/main.scss public/assets/css/style.css -w",
+    "devserver": "live-server --browser=firefox",
+    "start:dev": "npm-run-all --parallel start watch:sass",
+    "compile:sass": "node-sass public/assets/css/sass/main.scss public/assets/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/assets/css/style.comp.css -o public/assets/css/style.prefix.css",
+    "compress:css": "node-sass public/assets/css/style.prefix.css public/assets/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "proxy": "http://localhost:3000",
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1"
+  }
+}

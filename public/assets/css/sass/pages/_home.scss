@@ -1,0 +1,12 @@
+.container-fluid{
+    display: grid;
+    grid-template-rows: [name-start] 12rem [name-end  info-start] min-content [info-end content-start] min-content [content-end footer-start] 20vh [footer-end];
+    grid-template-columns: [col-start space-start] 15vw [space-end main-start] 70vw [main-end space-start-2] 15vw[space-end-2 col-end];
+    // grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+    // grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+   
+    background-color: #f2f1f1;
+    color: #333333;
+   min-height: 100vh;
+  
+}

@@ -1,0 +1,125 @@
+.container-contact{
+    display: grid;
+    grid-row: content-start / content-end;
+    grid-column: main-start / main-end;
+    
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+    &__heading{
+        font-family: 'Merriweather', sans-serif;
+        font-weight: 300;
+        font-size: 4rem;
+        color: #333333; 
+        font-style: italic;
+        margin-top: 6rem;
+        margin-bottom: 5rem;
+    }
+    &__form{
+        grid-column: 1;
+       display: grid;
+       grid-template-rows:3;
+       grid-template-columns:  1fr; 
+       padding:0 5rem 5rem 0;
+
+      
+        &--fields{
+            input &--btn{
+                padding:2rem;
+            }
+            &-1{
+                input{
+                    width: 48%;
+                    padding:2rem;
+                    margin-right: 1rem;
+                    float: left;
+                    font-size: 1.6rem;
+                    border:none;
+                }
+                input:hover{
+                    transition: all .2s;
+                    transform: translateY(-2px);
+                    box-shadow: 0 .5rem 1rem rgba(black,.3);
+                }
+                input:focus{
+                    outline:none;
+                }
+               grid-row: 1;
+               grid-column: 1;
+            }
+            &-2{
+                grid-column: 2;
+                input{
+                    width: 48%;
+                    float:right;
+                    padding:2rem;
+                    font-size: 1.6rem;
+                    border:none;
+                }
+                input:hover{
+                    transition: all .2s;
+                    transform: translateY(-2px);
+                    box-shadow: 0 .5rem 1rem rgba(black,.3);
+                }
+                input:focus{
+                    outline:none;
+                   
+                }
+                
+            }
+        }
+        &--message{
+            grid-row: 2;
+            
+            textarea{
+                width:100%;
+                margin-top: 5rem;
+                margin-bottom: 2rem;
+                padding:2rem;
+                font-size: 1.6rem;
+                height: 15vw;
+                border:.2rem transparent;
+            }
+            textarea:hover{
+                // border-bottom:.2rem solid #B52637;
+                transition: all .2s;
+                transform: translateY(-2px);
+                box-shadow: 0 .5rem 1rem rgba(black,.3);
+            }
+            textarea:focus{
+                outline:none;
+            }
+            
+        }
+        &--btn{
+            grid-row: 3;
+            
+            input{
+            float:right;
+            transition: all .2s;
+            position: relative;
+            font-size: 2rem;
+            padding: .5rem 1rem;
+            background-color: transparent;
+            color: #B52637;
+            border: .2rem solid transparent;
+            border-bottom:.2rem solid #B52637;
+            cursor: pointer;
+            }
+            input:hover{
+            animation: borderBottomFill .8s;
+            transform: translateY(-.1rem);
+            }
+        }
+       
+    }
+    &__text{
+        grid-column: 2;
+        font-size: 1.6rem;
+    }
+   
+}
+

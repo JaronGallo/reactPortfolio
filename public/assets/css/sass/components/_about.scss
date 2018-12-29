@@ -1,0 +1,62 @@
+.container-about{
+    display: grid;
+    grid-row: content-start / content-end;
+    grid-column: col-start / col-end;
+    background-color: #fff;
+   margin-bottom: 20.5vh;
+}
+.about{
+    display: grid;
+   grid-template-columns: 15vw 35vw 10vw 10vw 15vw;
+   padding:4rem 0;
+   
+   
+
+    &__left{
+        grid-column:2;
+
+        &--heading{
+            font-size: 1.6rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        &--text{
+            font-size: 1.6rem;
+            padding:2rem 0 0 0;
+            line-height: 3rem;
+        }
+    }
+    
+    &__right{
+        grid-column: 4;
+
+        &--heading{
+            font-size: 1.6rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        &--text {
+            font-family: 'Merriweather', sans-serif;
+            padding-top: 2rem;
+            font-size: 1.6rem;
+            color: #868686;
+            font-weight: 100;
+            font-style: italic;
+            list-style: none;
+            line-height: 4rem;
+        }
+    }
+    &__text{
+        grid-column: 5;
+        &--text{
+            font-family: 'Merriweather', sans-serif;
+            padding-top: 4rem;
+            font-size: 1.6rem;
+            color: #868686;
+            font-weight: 100;
+            font-style: italic;
+            list-style: none;
+            line-height: 4rem;
+        }
+    }
+
+
+}

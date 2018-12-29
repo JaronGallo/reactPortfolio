@@ -1,0 +1,63 @@
+.container-nameplate{
+    display: grid;
+    grid-row: name-start / name-end;
+    grid-column: main-start / main-end;
+    margin: 4rem 0;
+    justify-content: start;
+    align-content: start;  
+}
+.nameplates { 
+    z-index: 200;
+    display: grid;
+    grid-template-columns: repeat(2, 35vw);
+    &__logo--name {
+       margin-top: 1rem;
+        width: 22rem;
+        cursor: pointer;
+    }
+    &__btns {
+        display: grid;  
+        color: rgb(51, 51, 51);
+        grid-template-columns: repeat(5, 10rem);
+        justify-items: end;
+        justify-content: end;
+        align-items: end;
+       
+       
+        &--border {
+            border: 2px solid #B52637 !important;
+            color: #B52637 !important;
+        }
+        &--border:hover {
+            transition: all .2s;
+            background-color: #B52637;
+            color: #fff !important;
+        }
+        &--work:hover {
+            transition: all .2s;
+            color: #B52637;
+        }
+        &--about:hover {
+            transition: all .2s;
+            color: #B52637;
+        }
+        &--git:hover {
+            transition: all .2s;
+            color: #B52637;
+        }
+        &--resume:hover {
+            transition: all .2s;
+            color: #B52637;
+        }
+    }
+    button { 
+        font-family: 'Montserrat', sans-serif;
+        padding: .5rem 1rem;
+        border-style: none;
+        font-size: 1.7rem;
+        cursor: pointer;
+        color: rgb(51, 51, 51);
+        border-radius: 0;
+        background-color: inherit;
+    }
+}

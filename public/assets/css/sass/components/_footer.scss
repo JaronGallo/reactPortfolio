@@ -1,0 +1,53 @@
+.container-footer {
+    display: grid;
+    grid-row: footer-start / footer-end;
+    grid-column: 1 / main-end;
+}
+
+.footer{
+    display: grid;
+    position: relative;
+    &__btns::before{
+        content: '';
+        width: 73vw;
+        border-bottom: solid 2px #fff;
+        position: absolute;
+        left: 0;
+        top: 42%;
+        z-index: 1;
+    }
+    &__btns{
+        margin-bottom: 10vh;
+        display: grid;
+        grid-template-columns: repeat(2, 10rem);
+        justify-items: end;
+        justify-content: end;
+        align-items: end;
+        &--1{
+            color: rgb(51,51,51);
+        }
+        &--1:hover{
+            transition: all .2s;
+            color: #B52637;
+        }
+        &--2{
+            border: 2px solid #B52637 !important;
+            color: #B52637;
+        }
+        &--2:hover{
+            transition: all .2s;
+            background-color: #B52637;
+            color: #fff;
+        }
+    }
+    button { 
+        font-family: 'Montserrat', sans-serif;
+        padding: .5rem 1rem;
+        border-style: none;
+        font-size: 1.7rem;
+        cursor: pointer;
+        
+        border-radius: 0;
+        background-color: inherit;
+    }
+}

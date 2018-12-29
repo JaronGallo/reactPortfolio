@@ -1,0 +1,138 @@
+.container-train{
+    display: grid;
+    grid-row: content-start / content-end;
+    grid-column: col-start / col-end;
+    background-color: #fff;
+}
+.train {
+    display: grid;
+    grid-template-columns: 15vw 70vw 15vw;
+    &__img {
+        grid-column: 1/-1;
+        &--1 {
+            width: 100vw;
+            object-fit: cover;
+            height: 120px;
+        }
+    }
+    &__heading {
+        grid-column: 2;
+        margin: 5rem 0;
+        background-color: white;
+        &--text {
+            font-family: 'Merriweather', sans-serif;
+            font-weight: 300;
+            font-size: 4rem;
+            color: #333333;
+            font-style: italic;
+        }
+        &--tag {
+            font-family: 'Merriweather', sans-serif;
+            font-size: 1.6em;
+            color: #2E3192;
+            font-style: italic;
+            font-weight: bold;
+        }
+    }
+    &__content {
+        grid-column: 2;
+        font-size: 1.6rem;
+        display: grid;
+        grid-gap: 50px;
+        &--obj {
+            grid-column: 1;
+            &-heading {
+                font-family: 'Montserrat', sans-serif;
+                color: #333333;
+                font-weight: bolder;
+                padding-bottom: 1rem;
+            }
+            &-text {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1em;
+                color: #868686;
+                font-weight: 300;
+                line-height: 29px;
+                padding-bottom: 1rem;
+            }
+        }
+        &--challenge {
+            grid-column: 1;
+            &-heading {
+                font-family: 'Montserrat', sans-serif;
+                color: #333333;
+                font-weight: bolder;
+                padding-bottom: 1rem;
+            }
+            &-text-1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1em;
+                color: #868686;
+                font-weight: 300;
+                line-height: 29px;
+                padding-bottom: 5rem;
+            }
+        }
+    }
+    &__content2 {
+        grid-column: 2;
+        font-size: 1.6rem;
+        display: grid;
+        &--solution {
+            grid-column: 2;
+            &-heading {
+                font-family: 'Montserrat', sans-serif;
+                color: #333333;
+                font-weight: bolder;
+                padding-bottom: 1rem;
+            }
+            &-text-1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1em;
+                color: #868686;
+                font-weight: 300;
+                line-height: 29px;
+                padding-bottom: 1rem;
+            }
+            &-text-2 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1em;
+                color: #868686;
+                font-weight: 300;
+                line-height: 29px;
+                padding-bottom: 1rem;
+            }
+        }
+        &--btns {
+            grid-column: 2;
+            &-1 {
+                grid-column: 1;
+                button {
+                    margin: -20rem 2rem 2rem 0;
+                    width: 15rem;
+                    transition: all .2s;
+                    position: relative;
+                    font-size: 2rem;
+                    padding: .5rem 1rem;
+                    background-color: transparent;
+                    color: #B52637;
+                    border: .2rem solid #B52637;
+                    cursor: pointer;
+                }
+                button:hover {
+                    background-color: #B52637;
+                    color: white;
+                    transform: translateY(-.3rem);
+                    box-shadow: 0 .5rem 1rem rgba(black, .2);
+                    animation: pulse 1.3s infinite;
+                }
+                button:active {
+                    background-color: rgb(153, 31, 46);
+                    color: white;
+                    transform: translateY(-.1rem);
+                    box-shadow: 0 .5rem 1rem rgba(black, .1);
+                }
+            }
+        }
+    }
+}
