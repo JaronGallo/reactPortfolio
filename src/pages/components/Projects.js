@@ -2,7 +2,40 @@ import React, { Component } from "react";
 
 export default class Projects extends Component{
 	render() {
+        // Nexter buttons
+        function handleNexter(e) {
+            window.open('https://nexter-jarongallo.herokuapp.com/');
+        }
+        function handleNexterCode(e) {
+            window.open('https://github.com/JaronGallo/Nexter-CSS-Grid');
+        }
+        // Trillo buttons
+        function handleTrillo(e) {
+            window.open('https://trillo-jarongallo.herokuapp.com/');
+        }
+        function handleTrilloCode(e) {
+            window.open('https://github.com/JaronGallo/Trillo-CSS-Flexbox');
+        }
+        // Natours buttons
+        function handleNatours(e) {
+            window.open('https://natours-jarongallo.herokuapp.com/');
+        }
+        function handleNatoursCode(e) {
+            window.open('https://github.com/JaronGallo/Natours-CSS-Sass');
+        }
+        // Mongodb Form button
+        function handleForms(e) {
+            window.open('https://desolate-sea-56537.herokuapp.com/');
+        }
+        function handleFormsCode(e) {
+            window.open('https://github.com/JaronGallo/formsWithMongo');
+        }
 
+
+
+
+
+        // finish these
         function handleOcto(e) {
             window.location.assign("/project3");
         }
@@ -11,22 +44,14 @@ export default class Projects extends Component{
             window.open('https://github.com/SummitMedia1/trainstationguide');
 
         }
-        function handleNexter(e) {
-            window.open('https://nexter-jarongallo.herokuapp.com/');
-
-        }
-        function handleNatours(e) {
-            window.open('https://natours-jarongallo.herokuapp.com/');
-
-        }
+       
+       
         function handleTrillo(e) {
             window.open('https://trillo-jarongallo.herokuapp.com/');
 
         }
 
-        function handleForms(e) {
-            window.open('https://desolate-sea-56537.herokuapp.com/');
-        }
+        
 
         function handleGif(e) {
             window.open('https://github.com/JaronGallo/GiphyApi');
@@ -57,7 +82,7 @@ export default class Projects extends Component{
                                 <p className='content__textright--detail'>CSS Grid | Sass</p>
                                 <div className="content__textright--btn">
                                     <button  onClick={handleNexter}>View Project</button>
-                                    <button onClick={handleNexter}>View Code</button>
+                                    <button onClick={handleNexterCode}>View Code</button>
                                 </div>
                                 
                             </div>       
@@ -71,7 +96,7 @@ export default class Projects extends Component{
                                 <p className='content__textleft--detail'>CSS | Flexbox</p>
                                 <div className="content__textleft--btn">
                                     <button onClick={handleTrillo}>View Project</button>
-                                    <button onClick={handleNexter}>View Code</button>
+                                    <button onClick={handleTrilloCode}>View Code</button>
                                 </div>
                             </div>       
                 </div>
@@ -83,8 +108,8 @@ export default class Projects extends Component{
                                 <p className='content__textright--info'>Learned from course called Advanced CSS and Sass, no Bootstrap, just HTML and CSS!</p>
                                 <p className='content__textright--detail'>CSS | Sass</p>
                                 <div className="content__textright--btn">
-                                    <button onClick={handleNexter}>View Project</button>
-                                    <button onClick={handleNexter}>View Code</button>
+                                    <button onClick={handleNatours}>View Project</button>
+                                    <button onClick={handleNatoursCode}>View Code</button>
                                 </div>
                             </div>       
                 </div>
@@ -97,7 +122,7 @@ export default class Projects extends Component{
                                 <p className='content__textleft--detail'>MongoDb | UI</p>
                                 <div className="content__textleft--btn">
                                     <button onClick={handleMongoInfo}>View More</button>
-                                    <button onClick={handleNexter}>View Code</button>
+                                    <button onClick={handleFormsCode}>View Code</button>
                                 </div>
                             </div>       
                 </div>

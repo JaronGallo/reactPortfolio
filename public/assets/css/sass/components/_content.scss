@@ -67,10 +67,19 @@
             border-bottom: 2px solid #B52637;
             justify-self: start;
             transition: all .2s;
+            &:focus {outline:0;}
             &:hover {
                 border: 2px solid #B52637;
                 color: #fff;
                 background-color: #B52637;
+                box-shadow: 0 .5rem 1rem rgba(black, .2);
+            }
+           
+            &:active {
+                background-color: rgb(153, 31, 46);
+                color: white;
+                transform: translateY(-.1rem);
+                box-shadow: 0 .5rem 1rem rgba(black, .1);
             }
         }
     }
@@ -125,10 +134,19 @@
             border-bottom: 2px solid #B52637;
             justify-self: start;
             transition: all .2s;
+            &:focus {outline:0;}
             &:hover {
                 border: 2px solid #B52637;
                 color: #fff;
                 background-color: #B52637;
+                box-shadow: 0 .5rem 1rem rgba(black, .2);
+            }
+           
+            &:active {
+                background-color: rgb(153, 31, 46);
+                color: white;
+                transform: translateY(-.1rem);
+                box-shadow: 0 .5rem 1rem rgba(black, .1);
             }
         }
     }

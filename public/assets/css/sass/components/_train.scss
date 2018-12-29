@@ -118,6 +118,7 @@
                     color: #B52637;
                     border: .2rem solid #B52637;
                     cursor: pointer;
+                    &:focus {outline:0;}
                 }
                 button:hover {
                     background-color: #B52637;

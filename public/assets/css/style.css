@@ -243,10 +243,18 @@ body {
       border-bottom: 2px solid #B52637;
       justify-self: start;
       transition: all .2s; }
+      .content__textright--btn button:focus {
+        outline: 0; }
       .content__textright--btn button:hover {
         border: 2px solid #B52637;
         color: #fff;
-        background-color: #B52637; }
+        background-color: #B52637;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+      .content__textright--btn button:active {
+        background-color: #991f2e;
+        color: white;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); }
   .content__img--right {
     grid-column: 2;
     height: 377px;
@@ -294,10 +302,18 @@ body {
       border-bottom: 2px solid #B52637;
       justify-self: start;
       transition: all .2s; }
+      .content__textleft--btn button:focus {
+        outline: 0; }
       .content__textleft--btn button:hover {
         border: 2px solid #B52637;
         color: #fff;
-        background-color: #B52637; }
+        background-color: #B52637;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+      .content__textleft--btn button:active {
+        background-color: #991f2e;
+        color: white;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); }
 
 .container-info {
   display: grid;
@@ -615,6 +631,8 @@ body {
           color: #B52637;
           border: .2rem solid #B52637;
           cursor: pointer; }
+          .mongodb__content2--btns-1 button:focus {
+            outline: 0; }
         .mongodb__content2--btns-1 button:hover {
           background-color: #B52637;
           color: white;
@@ -731,6 +749,8 @@ body {
           color: #B52637;
           border: .2rem solid #B52637;
           cursor: pointer; }
+          .octothorpe__content2--btns-1 button:focus {
+            outline: 0; }
         .octothorpe__content2--btns-1 button:hover {
           background-color: #B52637;
           color: white;
@@ -847,6 +867,8 @@ body {
           color: #B52637;
           border: .2rem solid #B52637;
           cursor: pointer; }
+          .train__content2--btns-1 button:focus {
+            outline: 0; }
         .train__content2--btns-1 button:hover {
           background-color: #B52637;
           color: white;
