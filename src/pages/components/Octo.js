@@ -4,6 +4,10 @@ import { render } from 'react-dom';
 
 export default class Octo extends Component{
 	render() {
+        // Octo button
+        function handleOctoCode(e) {
+            window.open("https://github.com/JaronGallo/Octothorpe_v2");
+        }
 		return (
             <div className="container-octothorpe">
                 <div className="octothorpe">
@@ -36,8 +40,7 @@ export default class Octo extends Component{
                             </div>
                             <div className="octothorpe__content2--btns">
                                 <div className="octothorpe__content2--btns-1">
-                                    <button>View Code</button>
-                                    <button>View Project</button>
+                                    <button onClick={handleOctoCode}>View Code</button>
                                 </div>
                             </div>
                         </div>

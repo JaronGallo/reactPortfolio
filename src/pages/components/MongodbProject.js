@@ -4,7 +4,13 @@ import { render } from 'react-dom';
 
 export default class MongodbProject extends Component{
 	render() {
-        
+        // Train button
+        function handleMongoCode(e) {
+            window.open('https://github.com/JaronGallo/formsWithMongo');
+        }
+        function handleMongo(e) {
+            window.open('https://desolate-sea-56537.herokuapp.com/');
+        }
 		return (
             <div className="container-mongodb">
                 <div className="mongodb">
@@ -43,8 +49,8 @@ export default class MongodbProject extends Component{
                             </div>
                             <div className="mongodb__content2--btns">
                                 <div className="mongodb__content2--btns-1">
-                                    <button>View Code</button>
-                                    <button>View Project</button>
+                                    <button onClick={handleMongoCode}>View Code</button>
+                                    <button onClick={handleMongo}>View Project</button>
                                 </div>   
                             </div>
                         </div>

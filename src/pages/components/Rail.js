@@ -4,6 +4,13 @@ import { render } from 'react-dom';
 
 export default class Rail extends Component{
 	render() {
+        // Train button
+        function handleTrainCode(e) {
+            window.open('https://github.com/SummitMedia1/trainstationguide');
+        }
+        function handleTrain(e) {
+            window.open('https://github.com/SummitMedia1/trainstationguide');
+        }
 		return (
         <div className="container-train">
         <div className="train">
@@ -36,8 +43,8 @@ export default class Rail extends Component{
                     </div>
                     <div className="train__content2--btns">
                         <div className="train__content2--btns-1">
-                            <button>View Code</button>
-                            <button>View Project</button>
+                            <button onClick={handleTrainCode}>View Code</button>
+                            <button onClick={handleTrain}>View Project</button>
                         </div>
                     </div>
                 </div>
