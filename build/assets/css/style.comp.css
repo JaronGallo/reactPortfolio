@@ -152,6 +152,8 @@ body {
     justify-items: end;
     justify-content: end;
     align-items: end; }
+    .nameplates__btns:focus {
+      outline: 0; }
     .nameplates__btns--border {
       border: 2px solid #B52637 !important;
       color: #B52637 !important; }
@@ -365,12 +367,16 @@ body {
     align-items: end; }
     .footer__btns--1 {
       color: #333333; }
+      .footer__btns--1:focus {
+        outline: 0; }
     .footer__btns--1:hover {
       transition: all .2s;
       color: #B52637; }
     .footer__btns--2 {
       border: 2px solid #B52637 !important;
       color: #B52637; }
+      .footer__btns--2:focus {
+        outline: 0; }
     .footer__btns--2:hover {
       transition: all .2s;
       background-color: #B52637;
@@ -383,6 +389,8 @@ body {
     cursor: pointer;
     border-radius: 0;
     background-color: inherit; }
+    .footer button:focus {
+      outline: 0; }
 
 .container-about {
   display: grid;
@@ -513,6 +521,8 @@ body {
         border: .2rem solid transparent;
         border-bottom: .2rem solid #B52637;
         cursor: pointer; }
+      .contact__form--btn input:focus {
+        outline: 0; }
       .contact__form--btn input:hover {
         animation: borderBottomFill .8s;
         transform: translateY(-0.1rem); }
@@ -777,7 +787,7 @@ body {
     .train__img--1 {
       width: 100vw;
       object-fit: cover;
-      height: 120px; }
+      height: 340px; }
   .train__heading {
     grid-column: 2;
     margin: 5rem 0;

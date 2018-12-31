@@ -109,6 +109,9 @@
             border-bottom:.2rem solid #B52637;
             cursor: pointer;
             }
+            input:focus{
+                outline:0;
+            }
             input:hover{
             animation: borderBottomFill .8s;
             transform: translateY(-.1rem);

@@ -22,8 +22,9 @@
         justify-items: end;
         justify-content: end;
         align-items: end;
-       
-       
+       &:focus{
+           outline:0;
+       }
         &--border {
             border: 2px solid #B52637 !important;
             color: #B52637 !important;
