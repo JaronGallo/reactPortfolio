@@ -81,7 +81,7 @@ html {
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
-  @media only screen and (max-width: 175em) {
+  @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
   @media only screen and (max-width: 56.25em) {
@@ -141,10 +141,17 @@ body {
   z-index: 200;
   display: grid;
   grid-template-columns: repeat(2, 35vw); }
+  @media only screen and (max-width: 56.25em) {
+    .nameplates {
+      grid-template-columns: 70vw;
+      grid-template-rows: 1fr 1fr; } }
   .nameplates__logo--name {
     margin-top: 1rem;
     width: 22rem;
     cursor: pointer; }
+    @media only screen and (max-width: 56.25em) {
+      .nameplates__logo--name {
+        justify-self: center; } }
   .nameplates__btns {
     display: grid;
     color: #333333;
@@ -152,6 +159,20 @@ body {
     justify-items: end;
     justify-content: end;
     align-items: end; }
+    @media only screen and (max-width: 56.25em) {
+      .nameplates__btns {
+        justify-items: center;
+        justify-content: center;
+        align-items: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .nameplates__btns {
+        width: 45vw; } }
+    @media only screen and (max-width: 31.25em) {
+      .nameplates__btns {
+        width: 43vw; } }
+    @media only screen and (max-width: 25em) {
+      .nameplates__btns {
+        width: 35vw; } }
     .nameplates__btns--border {
       border: 2px solid #B52637 !important;
       color: #B52637 !important; }
@@ -358,6 +379,24 @@ body {
     left: 0;
     top: 42%;
     z-index: 1; }
+    @media only screen and (max-width: 103.125em) {
+      .footer__btns::before {
+        width: 68vw; } }
+    @media only screen and (max-width: 75em) {
+      .footer__btns::before {
+        width: 66vw; } }
+    @media only screen and (max-width: 56.25em) {
+      .footer__btns::before {
+        width: 58vw; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__btns::before {
+        width: 45vw; } }
+    @media only screen and (max-width: 31.25em) {
+      .footer__btns::before {
+        width: 43vw; } }
+    @media only screen and (max-width: 25em) {
+      .footer__btns::before {
+        width: 35vw; } }
   .footer__btns {
     margin-bottom: 10vh;
     display: grid;

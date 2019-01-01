@@ -81,7 +81,7 @@ html {
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
-  @media only screen and (max-width: 175em) {
+  @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
   @media only screen and (max-width: 56.25em) {
@@ -152,8 +152,6 @@ body {
     justify-items: end;
     justify-content: end;
     align-items: end; }
-    .nameplates__btns:focus {
-      outline: 0; }
     .nameplates__btns--border {
       border: 2px solid #B52637 !important;
       color: #B52637 !important; }
@@ -182,6 +180,8 @@ body {
     color: #333333;
     border-radius: 0;
     background-color: inherit; }
+  .nameplates button:focus {
+    outline: 0; }
 
 .container-content {
   display: grid;
@@ -358,6 +358,12 @@ body {
     left: 0;
     top: 42%;
     z-index: 1; }
+  @media only screen and (max-width: 75em) {
+    .footer__btns::before {
+      width: 50vw; } }
+  @media only screen and (max-width: 103.125em) {
+    .footer__btns::before {
+      width: 70vw; } }
   .footer__btns {
     margin-bottom: 10vh;
     display: grid;

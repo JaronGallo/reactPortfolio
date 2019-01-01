@@ -9,11 +9,18 @@
 .nameplates { 
     z-index: 200;
     display: grid;
-    grid-template-columns: repeat(2, 35vw);
+    grid-template-columns: repeat(2, 35vw); 
+    @include respond(tab-port) {
+        grid-template-columns: 70vw; 
+        grid-template-rows: 1fr 1fr; 
+    }
     &__logo--name {
-       margin-top: 1rem;
+        margin-top: 1rem;
         width: 22rem;
         cursor: pointer;
+        @include respond(tab-port) {
+            justify-self: center;
+        }
     }
     &__btns {
         display: grid;  
@@ -22,6 +29,24 @@
         justify-items: end;
         justify-content: end;
         align-items: end;
+        @include respond(tab-port) {
+            justify-items: center;
+            justify-content: center;
+            align-items: center;
+        }
+        @include respond(tab-port) {
+            
+        }
+        @include respond(phone) {
+            width:45vw;
+        }   
+         @include respond(phone-small) {
+            width:43vw;
+        }
+        @include respond(phone-smaller) {
+            width:35vw;
+        }
+
         &--border {
             border: 2px solid #B52637 !important;
             color: #B52637 !important;

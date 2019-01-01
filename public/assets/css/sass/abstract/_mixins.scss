@@ -34,17 +34,61 @@ ORDER:
   */
 
   @mixin respond($breakpoint) {
+    @if $breakpoint == phone-smaller {
+      @media only screen and (max-width: 25em) { @content }; //600/16 = 37.5, 600px
+      }
+      @if $breakpoint == phone-small {
+      @media only screen and (max-width: 31.25em) { @content }; //600/16 = 37.5, 600px
+      }
       @if $breakpoint == phone {
         @media only screen and (max-width: 37.5em) { @content }; //600/16 = 37.5, 600px
       }
       @if $breakpoint == tab-port {
         @media only screen and (max-width: 56.25em) { @content };  //900/16 = 56.25, 900px
       }
+      @if $breakpoint == tab {
+        @media only screen and (max-width: 68.75em) { @content }; //1200/16 = 75,  1200px
+      }
       @if $breakpoint == tab-land {
-        @media only screen and (max-width: 175em) { @content }; //1200/16 = 75,  1200px
+        @media only screen and (max-width: 75em) { @content }; //1200/16 = 75,  1200px
+      }
+      @if $breakpoint == desktop {
+        @media only screen and (max-width: 103.125em) { @content }; //1650/16 = 112.5, 1800px
       }
       @if $breakpoint == big-desktop {
         @media only screen and (min-width: 112.5em) { @content }; //1800/16 = 112.5, 1800px
       }
 
   }
+  // example 
+  // @include respond(desktop) {
+    //     &__btns::before{
+    //         width:68vw;
+    //     }
+    // }
+    // @include respond(tab-land) {
+    //     &__btns::before{
+    //         width:66vw;
+    //     }
+    // }
+    // @include respond(tab-port) {
+    //     &__btns::before{
+    //         width:58vw;
+    //     }
+    // }
+    // @include respond(phone) {
+    //     &__btns::before{
+    //         width:45vw;
+    //     }
+    // }
+    // @include respond(phone-small) {
+    //     &__btns::before{
+    //         width:43vw;
+    //     }
+    // }
+    // @include respond(phone-smaller) {
+    //     &__btns::before{
+    //         width:35vw;
+    //     }
+    // }
+   

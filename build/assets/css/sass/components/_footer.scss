@@ -14,8 +14,57 @@
         position: absolute;
         left: 0;
         top: 42%;
-        z-index: 1;
-    }
+        z-index: 1;  
+        @include respond(desktop) {
+                width:68vw;
+        }
+        @include respond(tab-land) {
+                width:66vw;
+        }
+        @include respond(tab-port) {
+                width:58vw;
+        }
+        @include respond(phone) {
+                width:45vw;
+        }
+        @include respond(phone-small) {
+                width:43vw;
+        }
+        @include respond(phone-smaller) {
+                width:35vw;
+        }
+    } 
+    // @include respond(desktop) {
+    //     &__btns::before{
+    //         width:68vw;
+    //     }
+    // }
+    // @include respond(tab-land) {
+    //     &__btns::before{
+    //         width:66vw;
+    //     }
+    // }
+    // @include respond(tab-port) {
+    //     &__btns::before{
+    //         width:58vw;
+    //     }
+    // }
+    // @include respond(phone) {
+    //     &__btns::before{
+    //         width:45vw;
+    //     }
+    // }
+    // @include respond(phone-small) {
+    //     &__btns::before{
+    //         width:43vw;
+    //     }
+    // }
+    // @include respond(phone-smaller) {
+    //     &__btns::before{
+    //         width:35vw;
+    //     }
+    // }
+   
     &__btns{
         margin-bottom: 10vh;
         display: grid;

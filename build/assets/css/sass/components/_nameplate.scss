@@ -22,9 +22,6 @@
         justify-items: end;
         justify-content: end;
         align-items: end;
-       &:focus{
-           outline:0;
-       }
         &--border {
             border: 2px solid #B52637 !important;
             color: #B52637 !important;
@@ -60,5 +57,8 @@
         color: rgb(51, 51, 51);
         border-radius: 0;
         background-color: inherit;
+    }
+    button:focus{
+        outline:0;
     }
 }
