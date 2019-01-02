@@ -239,6 +239,10 @@ body {
   transition: all .2s;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 2px; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      grid-template-columns: 1;
+      grid-template-rows: 2; } }
   .content:hover {
     transform: translateY(-2px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
@@ -249,11 +253,17 @@ body {
     object-fit: cover;
     overflow: hidden;
     border-radius: 2px; }
+    @media only screen and (max-width: 56.25em) {
+      .content__img--left {
+        grid-row: 1; } }
   .content__textright {
     display: grid;
     grid-column: 2;
     padding-left: 3rem;
     align-content: center; }
+    @media only screen and (max-width: 56.25em) {
+      .content__textright {
+        grid-row: 1; } }
     .content__textright--name {
       font-family: 'Merriweather', serif;
       font-size: 3rem;
