@@ -13,7 +13,7 @@ export default class Goals extends Component{
                         </div>
 
                         <div className="info__text"> 
-                        <p>With my Marketing degree and my knowledge on Web Development, I know how to best reach customers through a great user experience!</p>
+                        <p>With my knowledge on Web Development I will create a great user experience!</p>
                             
                         </div>
                     </div>

@@ -10,22 +10,28 @@
     grid-template-columns: repeat(2, 1fr);
     height: 15rem;
     margin-top: 3rem;
+    @include respond(tab-port) {margin-top: 5rem;
+    height: 10rem;
+    margin-bottom: 2rem;}
     &__titles{
-       
         grid-column: 1;
-
         &--1,
         &--2{
             font-family: 'Merriweather', sans-serif;
             font-weight: 300;
-        font-size: 4rem;
-        color: #333333; 
-        font-style: italic;
-       
+            font-size: 4rem;
+            color: #333333; 
+            font-style: italic;
+            @include respond(tab-port) {font-size: 3.5rem;}
+            @include respond(phone) {font-size: 3rem;
+            padding-right: 1rem;}
+            @include respond(phone-smaller) {font-size: 2.5rem;
+                padding-right: 1rem;}
         }
     
     }
-    &__text{ font-family: 'Merriweather', sans-serif;
+    &__text{ 
+        font-family: 'Merriweather', sans-serif;
         font-size: 1.5rem;
         font-style: italic;
         line-height: 2;

@@ -141,10 +141,29 @@ body {
   z-index: 200;
   display: grid;
   grid-template-columns: repeat(2, 35vw); }
+  @media only screen and (max-width: 56.25em) {
+    .nameplates {
+      grid-template-columns: 70vw;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 1rem;
+      justify-content: center;
+      align-items: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .nameplates {
+      grid-gap: 0; } }
   .nameplates__logo--name {
     margin-top: 1rem;
     width: 22rem;
     cursor: pointer; }
+  .nameplates__logo img {
+    grid-row: 1; }
+    @media only screen and (max-width: 56.25em) {
+      .nameplates__logo img {
+        justify-self: center;
+        width: 100%;
+        height: 4rem;
+        justify-content: center;
+        margin-bottom: 1rem; } }
   .nameplates__btns {
     display: grid;
     color: #333333;
@@ -152,9 +171,25 @@ body {
     justify-items: end;
     justify-content: end;
     align-items: end; }
+    @media only screen and (max-width: 56.25em) {
+      .nameplates__btns {
+        margin-bottom: 20px;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(5, 14vw); } }
+    @media only screen and (max-width: 37.5em) {
+      .nameplates__btns {
+        grid-template-columns: repeat(5, 14vw); } }
+    @media only screen and (max-width: 31.25em) {
+      .nameplates__btns {
+        grid-template-columns: repeat(5, 18vw);
+        margin-right: 2rem; } }
     .nameplates__btns--border {
       border: 2px solid #B52637 !important;
-      color: #B52637 !important; }
+      color: #B52637 !important;
+      box-sizing: border-box;
+      margin-left: 1rem; }
     .nameplates__btns--border:hover {
       transition: all .2s;
       background-color: #B52637;
@@ -172,6 +207,7 @@ body {
       transition: all .2s;
       color: #B52637; }
   .nameplates button {
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     padding: .5rem 1rem;
     border-style: none;
@@ -180,6 +216,12 @@ body {
     color: #333333;
     border-radius: 0;
     background-color: inherit; }
+    @media only screen and (max-width: 37.5em) {
+      .nameplates button {
+        padding: .3rem .5rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .nameplates button {
+        grid-template-columns: repeat(5, 18vw); } }
   .nameplates button:focus {
     outline: 0; }
 
@@ -327,6 +369,11 @@ body {
   grid-template-columns: repeat(2, 1fr);
   height: 15rem;
   margin-top: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .info {
+      margin-top: 5rem;
+      height: 10rem;
+      margin-bottom: 2rem; } }
   .info__titles {
     grid-column: 1; }
     .info__titles--1, .info__titles--2 {
@@ -335,6 +382,17 @@ body {
       font-size: 4rem;
       color: #333333;
       font-style: italic; }
+      @media only screen and (max-width: 56.25em) {
+        .info__titles--1, .info__titles--2 {
+          font-size: 3.5rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .info__titles--1, .info__titles--2 {
+          font-size: 3rem;
+          padding-right: 1rem; } }
+      @media only screen and (max-width: 25em) {
+        .info__titles--1, .info__titles--2 {
+          font-size: 2.5rem;
+          padding-right: 1rem; } }
   .info__text {
     font-family: 'Merriweather', sans-serif;
     font-size: 1.5rem;
@@ -358,12 +416,24 @@ body {
     left: 0;
     top: 42%;
     z-index: 1; }
-  @media only screen and (max-width: 75em) {
-    .footer__btns::before {
-      width: 50vw; } }
-  @media only screen and (max-width: 103.125em) {
-    .footer__btns::before {
-      width: 70vw; } }
+    @media only screen and (max-width: 103.125em) {
+      .footer__btns::before {
+        width: 68vw; } }
+    @media only screen and (max-width: 75em) {
+      .footer__btns::before {
+        width: 66vw; } }
+    @media only screen and (max-width: 56.25em) {
+      .footer__btns::before {
+        width: 58vw; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__btns::before {
+        width: 45vw; } }
+    @media only screen and (max-width: 31.25em) {
+      .footer__btns::before {
+        width: 43vw; } }
+    @media only screen and (max-width: 25em) {
+      .footer__btns::before {
+        width: 35vw; } }
   .footer__btns {
     margin-bottom: 10vh;
     display: grid;
