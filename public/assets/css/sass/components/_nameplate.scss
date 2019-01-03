@@ -59,9 +59,6 @@
             grid-template-columns: repeat(5, 18vw);
             margin-right: 2rem;
         }
-        @include respond(phone-smaller) {
-            
-        }
 
         &--border {
             border: 2px solid #B52637 !important;
@@ -102,7 +99,8 @@
         border-radius: 0;
         background-color: inherit;
         @include respond(phone) {
-            padding:.3rem .5rem
+            padding:.3rem .5rem;
+            font-size: 2rem;
         }   
          @include respond(phone-small) {
             grid-template-columns: repeat(5, 18vw);

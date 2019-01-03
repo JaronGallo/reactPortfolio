@@ -17,6 +17,9 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2,1fr);
     }
+    @include respond(phone) {
+        grid-template-rows: 200px 1fr;
+    }
     
     &:hover {
         transform: translateY(-2px);

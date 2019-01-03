@@ -3,6 +3,9 @@
     grid-row: content-start / content-end;
     grid-column: col-start / col-end;
     background-color: #fff;
+    @include respond(tab-port){
+        margin-top: 6rem;
+    }
 }
 .train {
     display: grid;
@@ -13,7 +16,14 @@
             width: 100vw;
             object-fit: cover;
             height: 340px;
+            @include respond(tab-port){
+                height: 200px;
+            }
+            @include respond(phone){
+                height: 150px;
+            }
         }
+        
     }
     &__heading {
         grid-column: 2;
@@ -39,8 +49,14 @@
         font-size: 1.6rem;
         display: grid;
         grid-gap: 50px;
+        @include respond(tab-port){
+            grid-gap: 0;
+            font-size: 2rem;
+        }
+        
         &--obj {
             grid-column: 1;
+            
             &-heading {
                 font-family: 'Montserrat', sans-serif;
                 color: #333333;
@@ -71,6 +87,9 @@
                 font-weight: 300;
                 line-height: 29px;
                 padding-bottom: 5rem;
+                @include respond(tab-port){
+                    padding-bottom: 1rem;
+                }
             }
         }
     }
@@ -78,6 +97,10 @@
         grid-column: 2;
         font-size: 1.6rem;
         display: grid;
+        @include respond(tab-port){
+            font-size: 2rem;
+            grid-column: 1;
+        }
         &--solution {
             grid-column: 2;
             &-heading {
@@ -93,6 +116,9 @@
                 font-weight: 300;
                 line-height: 29px;
                 padding-bottom: 1rem;
+                @include respond(tab-port){
+                    padding-bottom: 0;
+                }
             }
             &-text-2 {
                 font-family: 'Montserrat', sans-serif;
@@ -101,6 +127,9 @@
                 font-weight: 300;
                 line-height: 29px;
                 padding-bottom: 2rem;
+                @include respond(tab-port){
+                    padding-bottom: 3rem;
+                }
             }
         }
         &--btns {
@@ -118,6 +147,11 @@
                     color: #B52637;
                     border: .2rem solid #B52637;
                     cursor: pointer;
+                    @include respond(tab-port){
+                        margin: -20rem 2rem 2rem 0;
+                        width:100%;
+                        
+                    }
                     &:focus {outline:0;}
                 }
                 button:hover {

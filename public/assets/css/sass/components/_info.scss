@@ -37,5 +37,11 @@
         font-style: italic;
         line-height: 2;
         color: #868686;
+        @include respond(phone){
+            font-size: 1.8rem;
+        }
+        @include respond(phone-smaller){
+            font-size: 1.6rem;
+        }
     }
 } 

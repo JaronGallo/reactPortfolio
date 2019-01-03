@@ -123,7 +123,7 @@ export default class Projects extends Component{
                 <div className="content">
                     <img className="content__img--right" src="assets/img/database.jpg" />
                     <div className='content__textleft'>
-                        <h2 className='content__textleft--name'>Octothorpe (Education Tool)</h2>
+                        <h2 className='content__textleft--name'>Octothorpe</h2>
                         <p className='content__textleft--info'>React app that takes all of the videos from my Web Development program and cuts out silence and irrelevant infomation.</p>
                         <p className='content__textleft--detail'>User Auth | React.js</p>
                         <div className="content__textleft--btn">
