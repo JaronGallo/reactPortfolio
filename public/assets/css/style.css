@@ -80,7 +80,7 @@ html {
   /* 10px based off of the root 16px//// defines what 1rem is*/ }
   @media only screen and (min-width: 112.5em) {
     html {
-      font-size: 75%; } }
+      font-size: 60%; } }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -733,6 +733,9 @@ body {
   grid-row: content-start / content-end;
   grid-column: col-start / col-end;
   background-color: #fff; }
+  @media only screen and (max-width: 56.25em) {
+    .container-mongodb {
+      margin-top: 6rem; } }
 
 .mongodb {
   display: grid;
@@ -743,6 +746,12 @@ body {
       width: 100vw;
       object-fit: cover;
       height: 340px; }
+      @media only screen and (max-width: 56.25em) {
+        .mongodb__img--1 {
+          height: 200px; } }
+      @media only screen and (max-width: 37.5em) {
+        .mongodb__img--1 {
+          height: 150px; } }
   .mongodb__heading {
     grid-column: 2;
     margin: 5rem 0;
@@ -764,6 +773,10 @@ body {
     font-size: 1.6rem;
     display: grid;
     grid-gap: 50px; }
+    @media only screen and (max-width: 56.25em) {
+      .mongodb__content {
+        grid-gap: 0;
+        font-size: 2rem; } }
     .mongodb__content--obj {
       grid-column: 1; }
       .mongodb__content--obj-heading {
@@ -799,10 +812,17 @@ body {
         font-weight: 300;
         line-height: 29px;
         padding-bottom: 5rem; }
+        @media only screen and (max-width: 56.25em) {
+          .mongodb__content--challenge-text-2 {
+            padding-bottom: 1rem; } }
   .mongodb__content2 {
     grid-column: 2;
     font-size: 1.6rem;
     display: grid; }
+    @media only screen and (max-width: 56.25em) {
+      .mongodb__content2 {
+        font-size: 2rem;
+        grid-column: 1; } }
     .mongodb__content2--solution {
       grid-column: 2; }
       .mongodb__content2--solution-heading {
@@ -817,6 +837,9 @@ body {
         font-weight: 300;
         line-height: 29px;
         padding-bottom: 1rem; }
+        @media only screen and (max-width: 56.25em) {
+          .mongodb__content2--solution-text-1 {
+            padding-bottom: 0; } }
       .mongodb__content2--solution-text-2 {
         font-family: 'Montserrat', sans-serif;
         font-size: 1em;
@@ -824,6 +847,9 @@ body {
         font-weight: 300;
         line-height: 29px;
         padding-bottom: 1rem; }
+        @media only screen and (max-width: 56.25em) {
+          .mongodb__content2--solution-text-2 {
+            padding-bottom: 3rem; } }
     .mongodb__content2--btns {
       grid-column: 2; }
       .mongodb__content2--btns-1 {
@@ -839,6 +865,10 @@ body {
           color: #B52637;
           border: .2rem solid #B52637;
           cursor: pointer; }
+          @media only screen and (max-width: 56.25em) {
+            .mongodb__content2--btns-1 button {
+              margin: -20rem 2rem 2rem 0;
+              width: 100%; } }
           .mongodb__content2--btns-1 button:focus {
             outline: 0; }
         .mongodb__content2--btns-1 button:hover {
@@ -858,6 +888,9 @@ body {
   grid-row: content-start / content-end;
   grid-column: col-start / col-end;
   background-color: #fff; }
+  @media only screen and (max-width: 56.25em) {
+    .container-octothorpe {
+      margin-top: 6rem; } }
 
 .octothorpe {
   display: grid;
@@ -868,6 +901,12 @@ body {
       width: 100vw;
       object-fit: cover;
       height: 340px; }
+      @media only screen and (max-width: 56.25em) {
+        .octothorpe__img--1 {
+          height: 200px; } }
+      @media only screen and (max-width: 37.5em) {
+        .octothorpe__img--1 {
+          height: 150px; } }
   .octothorpe__heading {
     grid-column: 2;
     margin: 5rem 0;
@@ -889,6 +928,10 @@ body {
     font-size: 1.6rem;
     display: grid;
     grid-gap: 50px; }
+    @media only screen and (max-width: 56.25em) {
+      .octothorpe__content {
+        grid-gap: 0;
+        font-size: 2rem; } }
     .octothorpe__content--obj {
       grid-column: 1; }
       .octothorpe__content--obj-heading {
@@ -917,10 +960,17 @@ body {
         font-weight: 300;
         line-height: 29px;
         padding-bottom: 5rem; }
+        @media only screen and (max-width: 56.25em) {
+          .octothorpe__content--challenge-text-1 {
+            padding-bottom: 1rem; } }
   .octothorpe__content2 {
     grid-column: 2;
     font-size: 1.6rem;
     display: grid; }
+    @media only screen and (max-width: 56.25em) {
+      .octothorpe__content2 {
+        font-size: 2rem;
+        grid-column: 1; } }
     .octothorpe__content2--solution {
       grid-column: 2; }
       .octothorpe__content2--solution-heading {
@@ -935,6 +985,9 @@ body {
         font-weight: 300;
         line-height: 29px;
         padding-bottom: 1rem; }
+        @media only screen and (max-width: 56.25em) {
+          .octothorpe__content2--solution-text-1 {
+            padding-bottom: 0; } }
       .octothorpe__content2--solution-text-2 {
         font-family: 'Montserrat', sans-serif;
         font-size: 1em;
@@ -942,6 +995,9 @@ body {
         font-weight: 300;
         line-height: 29px;
         padding-bottom: 1rem; }
+        @media only screen and (max-width: 56.25em) {
+          .octothorpe__content2--solution-text-2 {
+            padding-bottom: 3rem; } }
     .octothorpe__content2--btns {
       grid-column: 2; }
       .octothorpe__content2--btns-1 {
@@ -957,6 +1013,10 @@ body {
           color: #B52637;
           border: .2rem solid #B52637;
           cursor: pointer; }
+          @media only screen and (max-width: 56.25em) {
+            .octothorpe__content2--btns-1 button {
+              margin: -20rem 2rem 2rem 0;
+              width: 100%; } }
           .octothorpe__content2--btns-1 button:focus {
             outline: 0; }
         .octothorpe__content2--btns-1 button:hover {
