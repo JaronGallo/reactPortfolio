@@ -2,7 +2,9 @@
     display: grid;
     grid-row: info-start / info-end;
     grid-column: main-start / main-end;
-    
+    @include respond(phone){
+        margin-bottom: 2rem;
+    }
     
 }
 .info {

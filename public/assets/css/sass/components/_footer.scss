@@ -70,6 +70,10 @@
         
         border-radius: 0;
         background-color: inherit;
+        @include respond(phone){
+            padding:.3rem .5rem;
+            font-size: 2rem;
+        }
         &:focus{outline:0;}
     }
 }
