@@ -29,8 +29,8 @@ app.post('/api/form', (req, res) => {
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: { 
-          user: 'contactjarongallo@gmail.com',
-        pass:'changethis1!'
+          user: '',
+        pass:''
         }
     });
 
