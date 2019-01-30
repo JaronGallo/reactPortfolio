@@ -111,6 +111,7 @@
     
     
     function onComplete() {
+        $body.toggleClass('overflow-visable');
         svg.removeEventListener("touchstart", mouseHandler);
         svg.removeEventListener("touchend", mouseHandler);
       svg.removeEventListener("mousedown", mouseHandler);
@@ -122,7 +123,7 @@
       namePop.classList.add("name_pop--active");
       elem.classList.add("fade");
     
-      $body.toggleClass('overflow-visable');
+      
       
       
       
