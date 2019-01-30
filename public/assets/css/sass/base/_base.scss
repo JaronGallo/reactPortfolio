@@ -63,11 +63,12 @@ body {
   }
   svg {
     position: absolute;
+   
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    max-height:100%;
+    min-height:100%;
     @include respond(phone) {
         position: relative !important;
     } 
