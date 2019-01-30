@@ -156,10 +156,6 @@
                         margin: -2rem 2rem 4rem 0;
                         width:100%;
                     }
-                    @include respond(tab-port){
-                        margin: -2rem 2rem 4rem 0;
-                        width:100%;
-                    }
                     &:focus {outline:0;}
                 }
                 button:hover {
