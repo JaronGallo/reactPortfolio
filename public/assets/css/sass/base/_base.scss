@@ -44,16 +44,8 @@ body {
   
   
   #demo {
-    
     cursor: none;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    @include respond(phone) {
-        position: relative !important;
-    } 
   }
   
   #stage {
@@ -65,7 +57,14 @@ body {
     justify-content: center; 
   }
   svg {
-    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include respond(phone) {
+        position: relative !important;
+    } 
     
 }
 .fade{
