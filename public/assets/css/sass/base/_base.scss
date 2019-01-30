@@ -70,7 +70,8 @@ body {
     
 }
 image{
-    max-width: 100vw;
+    min-width: 100vw !important;
+    min-height: 100vh !important;
 }
 .fade{
     transition: all .2s;
