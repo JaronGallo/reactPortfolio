@@ -2,6 +2,7 @@
     display: grid;
     grid-row: content-start / content-end;
     grid-column: main-start / main-end;
+    animation: faze linear .2s;
   
 }
 .content {

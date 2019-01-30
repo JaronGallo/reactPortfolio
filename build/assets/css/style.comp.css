@@ -125,7 +125,8 @@ svg {
   opacity: 0; }
 
 #landing {
-  animation: fadeIn .8s; }
+  animation: fadeIn .8s;
+  animation-iteration-count: 1; }
 
 .touch {
   -webkit-user-select: none;
