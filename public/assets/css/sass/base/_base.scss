@@ -30,7 +30,6 @@ html{
 }
 
 body {
-
     box-sizing: border-box;
     -webkit-user-select: none;
 }
@@ -44,14 +43,13 @@ body {
   
   
   #demo {
-    
     width: auto;
     height: auto;
     cursor: none;
   }
   
   #stage {
-    display: cover;
+    display: flex;
     width: 100%;
     height: 100%;
     flex-direction: column;
@@ -64,15 +62,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    background-size: 100% 100%;
     @include respond(phone) {
         position: relative !important;
     } 
     
 }
-image{
-    min-width: 100vw !important;
-    min-height: 100vh !important;
-}
+
 .fade{
     transition: all .2s;
     opacity: 0;
