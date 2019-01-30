@@ -66,8 +66,8 @@ body {
     width: 100%;
     height: 100%;
     @include respond(phone) {
-        position: absolute !important;
-        width:100% !important;
+        position: relative !important;
+        
     } 
     
 }
