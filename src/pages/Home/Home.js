@@ -9,6 +9,7 @@ import Skills from '../components/Skills.js';
 
 class Home extends Component{
 	render() {
+
 		return (
             <div className="container-fluid">
                 <NamePlate />

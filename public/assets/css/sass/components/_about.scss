@@ -7,6 +7,10 @@
    @include respond(phone){
     margin-bottom: 0;
 }
+#lines {
+    max-width: 100vw;
+    max-height: 100vh;
+}
 }
 .about{
     display: grid;

@@ -23,7 +23,6 @@
                 height: 150px;
             }
         }
-        
     }
     &__heading {
         grid-column: 2;
@@ -53,7 +52,6 @@
             grid-gap: 0;
             font-size: 2rem;
         }
-        
         &--obj {
             grid-column: 1;
             
@@ -150,7 +148,6 @@
                     @include respond(tab-port){
                         margin: -20rem 2rem 2rem 0;
                         width:100%;
-                        
                     }
                     &:focus {outline:0;}
                 }

@@ -34,37 +34,7 @@
                 width:35vw;
         }
     } 
-    // @include respond(desktop) {
-    //     &__btns::before{
-    //         width:68vw;
-    //     }
-    // }
-    // @include respond(tab-land) {
-    //     &__btns::before{
-    //         width:66vw;
-    //     }
-    // }
-    // @include respond(tab-port) {
-    //     &__btns::before{
-    //         width:58vw;
-    //     }
-    // }
-    // @include respond(phone) {
-    //     &__btns::before{
-    //         width:45vw;
-    //     }
-    // }
-    // @include respond(phone-small) {
-    //     &__btns::before{
-    //         width:43vw;
-    //     }
-    // }
-    // @include respond(phone-smaller) {
-    //     &__btns::before{
-    //         width:35vw;
-    //     }
-    // }
-   
+    
     &__btns{
         margin-bottom: 10vh;
         display: grid;
@@ -100,6 +70,10 @@
         
         border-radius: 0;
         background-color: inherit;
+        @include respond(phone){
+            padding:.3rem .5rem;
+            font-size: 2rem;
+        }
         &:focus{outline:0;}
     }
 }
