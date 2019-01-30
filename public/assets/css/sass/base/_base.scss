@@ -77,14 +77,12 @@ body {
 .fade{
     transition: all .2s;
     opacity: 0;
-
-    
 }
 #landing{
     animation: animateElement linear 1s;
     animation-iteration-count: 1;
     transition:all .2s ease;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     height:100vh;
