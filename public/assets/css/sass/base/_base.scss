@@ -32,7 +32,10 @@ html{
 body {
 
     box-sizing: border-box;
-    -webkit-user-select: none;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
   .overflow-hidden{
@@ -63,9 +66,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    min-height:100% ;
     @include respond(phone) {
         position: relative !important;
-    }  
+    } 
     
 }
 .fade{
@@ -78,8 +82,8 @@ body {
     animation: animateElement linear 1s;
     animation-iteration-count: 1;
     transition:all .2s ease;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 
