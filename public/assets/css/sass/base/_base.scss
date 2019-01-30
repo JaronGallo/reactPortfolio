@@ -85,8 +85,11 @@ body {
     animation: animateElement linear 1s;
     animation-iteration-count: 1;
     transition:all .2s ease;
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height:100%;
+    width:100%;
 }
 
 
