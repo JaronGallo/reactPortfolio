@@ -47,6 +47,8 @@ body {
     width: auto;
     height: auto;
     cursor: none;
+    overflow: hidden;
+    position: fixed;
   }
   
   #stage {
@@ -65,7 +67,7 @@ body {
     height: 100%;
     @include respond(phone) {
         position: fixed !important;
-        width:100vw;
+        width:100vw !important;
     } 
     
 }

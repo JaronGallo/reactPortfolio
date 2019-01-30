@@ -97,6 +97,10 @@ html {
     html {
       font-size: 45%; } }
 
+html, body {
+  margin: 0;
+  padding: 0; }
+
 body {
   box-sizing: border-box;
   -webkit-user-select: none; }
@@ -110,7 +114,9 @@ body {
 #demo {
   width: auto;
   height: auto;
-  cursor: none; }
+  cursor: none;
+  overflow: hidden;
+  position: fixed; }
 
 #stage {
   display: cover;
@@ -122,8 +128,14 @@ body {
 
 svg {
   position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%; }
+  @media only screen and (max-width: 37.5em) {
+    svg {
+      position: fixed !important;
+      width: 100vw !important; } }
 
 .fade {
   transition: all .2s;
