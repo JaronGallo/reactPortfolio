@@ -30,7 +30,7 @@ html{
 }
 
 body {
-
+    overflow: hidden;
     box-sizing: border-box;
     -webkit-user-select: none;
 }
@@ -59,7 +59,7 @@ body {
   }
   svg {
     position: absolute;
-    overflow: hidden;
+    
     top: 0;
     left: 0;
     width: 100%;
