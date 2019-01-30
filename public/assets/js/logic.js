@@ -102,13 +102,17 @@
     window.addEventListener("mousedown", mouseHandler);
     window.addEventListener("mouseup", mouseHandler);
     window.addEventListener("mousemove", mouseMove);
+    window.addEventListener("touchstart", pressingDown, false);
+    window.addEventListener("touchend", notPressingDown, false);
+    
     
     newSize();
     window.addEventListener("resize", newSize);
     
     
     function onComplete() {
-      
+        svg.removeEventListener("touchstart", pressingDown);
+        svg.removeEventListener("touchend", notPressingDown);
       svg.removeEventListener("mousedown", mouseHandler);
       svg.removeEventListener("mouseup", mouseHandler);
       svg.removeEventListener("mousemove", mouseMove);
