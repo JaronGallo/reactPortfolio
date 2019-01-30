@@ -3,7 +3,10 @@
     grid-row: content-start / content-end;
     grid-column: main-start / main-end;
     animation: faze linear .2s;
-  
+    @include respond(phone) {
+        grid-column: col-start / col-end;
+        padding:0 2rem;
+    }
 }
 .content {
     display: grid;

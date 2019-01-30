@@ -142,7 +142,7 @@
             &-1 {
                 grid-column: 1;
                 button {
-                    margin: -20rem 2rem 2rem 0;
+                    margin: -2rem 2rem 2rem 0;
                     width: 15rem;
                     transition: all .2s;
                     position: relative;
@@ -153,7 +153,7 @@
                     border: .2rem solid #B52637;
                     cursor: pointer;
                     @include respond(tab-port){
-                        margin: -20rem 2rem 2rem 0;
+                        margin: -2rem 2rem 4rem 0;
                         width:100%;
                     }
                     &:focus {outline:0;}
