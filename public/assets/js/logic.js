@@ -122,6 +122,11 @@
       TweenMax.set(svg, {cursor:"auto"});
       namePop.classList.add("name_pop--active");
       elem.classList.add("fade");
+    
+      
+      
+      
+      
     // elem.remove();
     setTimeout(function(){ elem.remove(); },600);
     
