@@ -111,7 +111,7 @@
     
     
     function onComplete() {
-        
+        $body.toggleClass('overflow-visable');
         svg.removeEventListener("touchstart", mouseHandler);
         svg.removeEventListener("touchend", mouseHandler);
       svg.removeEventListener("mousedown", mouseHandler);
