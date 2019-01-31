@@ -23,6 +23,9 @@
     }
     @include respond(phone) {
         grid-template-rows: 200px 1fr;
+        &:hover {
+            
+        }
     }
     
     &:hover {
