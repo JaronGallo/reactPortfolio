@@ -7,7 +7,7 @@
     }
     @include respond(phone) {
         grid-column: col-start / col-end;
-        padding:0 2rem;
+        padding:0 4rem;
     }
     
 }
