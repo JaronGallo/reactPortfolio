@@ -45,7 +45,8 @@ document.ready=function(){
     var data = document.querySelector(".tlProgress");
     
     
-    
+    $body = $('body');
+        $body.toggleClass('overflow-hidden');
     var ratio = 0.5625;
        
     TweenMax.set("#instructions, #dial", {xPercent: -50});
