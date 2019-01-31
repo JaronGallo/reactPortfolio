@@ -6,6 +6,10 @@
     @include respond(tab-port){
         margin-top: 6rem;
     }
+    @include respond(phone) {
+        grid-column: col-start / col-end;
+        padding:0 4rem;
+    }
 }
 .mongodb {
     display: grid;
