@@ -1,49 +1,28 @@
 document.ready=function(){
-    var lastY = 0; // Needed in order to determine direction of scroll.
-    $(".scroller").on('touchstart', function(event) {
-        lastY = event.touches[0].clientY;
-    });
+    // var lastY = 0; // Needed in order to determine direction of scroll.
+    // $(".scroller").on('touchstart', function(event) {
+    //     lastY = event.touches[0].clientY;
+    // });
     
-    $('.scroller').on('touchmove', function(event) {
-        var top = event.touches[0].clientY;
+    // $('.scroller').on('touchmove', function(event) {
+    //     var top = event.touches[0].clientY;
     
-        // Determine scroll position and direction.
-        var scrollTop = $(event.currentTarget).scrollTop();
-        var direction = (lastY - top) < 0 ? "up" : "down";
+    //     // Determine scroll position and direction.
+    //     var scrollTop = $(event.currentTarget).scrollTop();
+    //     var direction = (lastY - top) < 0 ? "up" : "down";
     
-        // FIX IT!
-        if (scrollTop == 0 && direction == "up") {
-          // Prevent scrolling up when already at top as this introduces a freeze.
-          event.preventDefault();
-        } else if (scrollTop >= (event.currentTarget.scrollHeight - event.currentTarget.outerHeight()) && direction == "down") {
-          // Prevent scrolling down when already at bottom as this also introduces a freeze.
-          event.preventDefault();
-        }
+    //     // FIX IT!
+    //     if (scrollTop == 0 && direction == "up") {
+    //       // Prevent scrolling up when already at top as this introduces a freeze.
+    //       event.preventDefault();
+    //     } else if (scrollTop >= (event.currentTarget.scrollHeight - event.currentTarget.outerHeight()) && direction == "down") {
+    //       // Prevent scrolling down when already at bottom as this also introduces a freeze.
+    //       event.preventDefault();
+    //     }
     
-        lastY = top;
-    });
-    function hasTouch() {
-        return 'ontouchstart' in document.documentElement
-               || navigator.maxTouchPoints > 0
-               || navigator.msMaxTouchPoints > 0;
-    }
+    //     lastY = top;
+    // });
     
-    if (hasTouch()) { // remove all :hover stylesheets
-        try { // prevent exception on browsers not supporting DOM styleSheets properly
-            for (var si in document.styleSheets) {
-                var styleSheet = document.styleSheets[si];
-                if (!styleSheet.rules) continue;
-    
-                for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-                    if (!styleSheet.rules[ri].selectorText) continue;
-    
-                    if (styleSheet.rules[ri].selectorText.match(':hover')) {
-                        styleSheet.deleteRule(ri);
-                    }
-                }
-            }
-        } catch (ex) {}
-    }
     
     
      if (sessionStorage.getItem('advertOnce') !== 'true') {
