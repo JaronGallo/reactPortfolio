@@ -7,8 +7,8 @@ document.ready=function(){
             var elem = document.getElementById("landing");
             $body = $('body');
             $('#landing').remove();
-            setTimeout(function(){$body.removeClass('user-select');},2000);
-            setTimeout(function(){elem.removeClass('fade');},2000);
+            setTimeout(function(){$body.removeClass('user-select');},5000);
+            setTimeout(function(){elem.removeClass('fade');},100);
             
           return;
         }
