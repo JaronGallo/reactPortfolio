@@ -69,15 +69,14 @@ body {
 }
   #demo {
       
-    width: auto;
-    height: auto;
+    
     cursor: none;
   }
   
   #stage {
     display: flex;
-    width: 11%;
-    height: 11%;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center; 
