@@ -70,7 +70,8 @@ document.ready=function(){
     window.addEventListener("resize", newSize);
     
     function onComplete() {
-        $body.toggleClass('overflow-visable');
+        $body.removeClass('overflow-visable');
+        $body.toggleClass('user-select');
         svg.removeEventListener("touchstart", mouseHandler);
         svg.removeEventListener("touchend", mouseHandler);
         svg.removeEventListener("mousedown", mouseHandler);
@@ -80,7 +81,7 @@ document.ready=function(){
         TweenMax.to("#ring, #dot", 0.35, {attr:{r:0}, autoAlpha:0, ease:Linear.easeNone});
         TweenMax.set(svg, {cursor:"auto"});
         namePop.classList.add("name_pop--active");
-        
+        elem.classList.add("fade");
         setTimeout(function(){ elem.remove(); },600);
     }
     function logo() {
