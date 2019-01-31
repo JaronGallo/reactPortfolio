@@ -10,6 +10,10 @@
 .octothorpe {
     display: grid;
     grid-template-columns: 15vw 70vw 15vw;
+    @include respond(phone) {
+        grid-template-columns: 5vw 90vw 5vw;
+        
+    }
     &__img {
         grid-column: 1/-1;
         &--1 {

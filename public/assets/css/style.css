@@ -390,7 +390,7 @@ body {
   grid-template-columns: repeat(2, 50%);
   background-color: #fff;
   padding: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   transition: all .2s;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 2px; }
@@ -592,7 +592,7 @@ body {
       margin-bottom: 1rem; } }
   @media only screen and (max-width: 37.5em) {
     .info {
-      height: 7rem; } }
+      height: 9rem; } }
   .info__titles {
     grid-column: 1; }
     .info__titles--1, .info__titles--2 {
@@ -731,7 +731,7 @@ body {
       grid-template-columns: 15vw 35vw 10vw 15vw 15vw; } }
   @media only screen and (max-width: 37.5em) {
     .about {
-      grid-template-columns: 15vw 70vw 15vw;
+      grid-template-columns: 5vw 90vw 5vw;
       grid-template-rows: repeat(2, 1fr); } }
   .about__left {
     grid-column: 2; }
@@ -935,6 +935,9 @@ body {
 .mongodb {
   display: grid;
   grid-template-columns: 15vw 70vw 15vw; }
+  @media only screen and (max-width: 37.5em) {
+    .mongodb {
+      grid-template-columns: 5vw 90vw 5vw; } }
   .mongodb__img {
     grid-column: 1/-1; }
     .mongodb__img--1 {
@@ -1090,6 +1093,9 @@ body {
 .octothorpe {
   display: grid;
   grid-template-columns: 15vw 70vw 15vw; }
+  @media only screen and (max-width: 37.5em) {
+    .octothorpe {
+      grid-template-columns: 5vw 90vw 5vw; } }
   .octothorpe__img {
     grid-column: 1/-1; }
     .octothorpe__img--1 {
@@ -1238,6 +1244,9 @@ body {
 .train {
   display: grid;
   grid-template-columns: 15vw 70vw 15vw; }
+  @media only screen and (max-width: 37.5em) {
+    .train {
+      grid-template-columns: 5vw 90vw 5vw; } }
   .train__img {
     grid-column: 1/-1; }
     .train__img--1 {
