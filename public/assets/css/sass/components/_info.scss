@@ -6,7 +6,6 @@
     @include respond(phone) {
         grid-column: col-start / col-end;
         padding:0 4rem;
-        margin-bottom: 1rem;
     }
     
 }
@@ -17,7 +16,7 @@
     margin-top: 3rem;
     @include respond(tab-port) {margin-top: 5rem;
     height: 10rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     }
     
     &__titles{
