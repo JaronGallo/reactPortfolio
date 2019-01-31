@@ -34,6 +34,7 @@ body {
     box-sizing: border-box;
     
 }
+#root > * { -webkit-transform: translateZ(0px); }
 .user-select{
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
