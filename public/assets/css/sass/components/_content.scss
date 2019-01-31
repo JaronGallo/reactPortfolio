@@ -2,7 +2,7 @@
     display: grid;
     grid-row: content-start / content-end;
     grid-column: main-start / main-end;
-    animation: faze linear .2s;
+    
     @include respond(phone) {
         grid-column: col-start / col-end;
         padding:0 2rem;
@@ -130,6 +130,7 @@
         }
     }
     &__img--right {
+        
         grid-column: 2;
         height: 377px;
         width: 100%;

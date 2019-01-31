@@ -374,12 +374,16 @@ body {
 .container-content {
   display: grid;
   grid-row: content-start / content-end;
-  grid-column: main-start / main-end;
-  animation: faze linear .2s; }
+  grid-column: main-start / main-end; }
   @media only screen and (max-width: 37.5em) {
     .container-content {
       grid-column: col-start / col-end;
       padding: 0 2rem; } }
+
+@media (hover: hover) {
+  .content:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); } }
 
 .content {
   display: grid;
@@ -397,9 +401,6 @@ body {
   @media only screen and (max-width: 37.5em) {
     .content {
       grid-template-rows: 200px 1fr; } }
-  .content:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
   .content__img--left {
     grid-column: 1;
     height: 377px;
