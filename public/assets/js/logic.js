@@ -3,14 +3,8 @@ document.ready=function(){
      if (sessionStorage.getItem('advertOnce') !== 'true') {
         $("#landing").append('<div><img class="popup_name" src="assets/img/Logo.svg" id="name-pop" style="transition:all .2s ease;animation: animateElementUp linear 3s;position: absolute; left: 50%; top:50%;transform: translate(-50%, -50%);z-index: 2;width: 600px;"></div><div><h1 class="touch" style="position: absolute; left:65%; top:60%;transform: translate(-50%, -50%);z-index: 2;width: 600px;color:#f7dc6f;font-size:2em;">Touch & Hold Screen</h1></div><svg id="demo" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="100vw" height="100vh" viewBox="0 0 100% 100%"><defs><radialGradient id="maskGradient"><stop offset="50%" stop-color="#fff" /><stop offset="100%" stop-color="#000" /></radialGradient><mask id="theMask"><circle id="masker" r="150" fill="url(#maskGradient)" cx="800" cy="450" /></mask></defs><image id="regular" xlink:href="http://leysaflores.com/wp-content/uploads/WallpaperGoldMarble_1900x1200.jpg" x="0" y="0" width="1900" height="1200" opacity="1" /><g id="maskReveal" mask="url(#theMask)"><image id="regular" xlink:href="https://m.blog.hu/ko/konyhabutortrend/image/modern_es_elegans_konyhasziget.jpg" x="0" y="0" width="1900" height="1200" opacity="1" /></g><circle id="ring" r="20" fill="none" stroke="#dc143c" stroke-width="2" cx="800" cy="450" /><circle id="dot" r="4" fill="#dc143c" cx="800" cy="450" /></svg><div id="instructions"><svg id="dial" xmlns="http://www.w3.org/2000/svg" width="100vw" height="100vh" viewBox="0 0 100% 100%"></svg></div>');
         sessionStorage.setItem('advertOnce','true');
-        $body = $('body');
-    $body.toggleClass('overflow-hidden');
         } else {
-            var elem = document.getElementById("landing");
-            $body = $('body');
             $('#landing').remove();
-            
-            
           return;
         }
         logo();
@@ -22,8 +16,9 @@ document.ready=function(){
     var pt = svg.createSVGPoint();
     var data = document.querySelector(".tlProgress");
     
-    
-    
+    $body = $('body');
+    $body.toggleClass('overflow-hidden');
+    $body.toggleClass('user-select');
     var ratio = 0.5625;
        
     TweenMax.set("#instructions, #dial", {xPercent: -50});
@@ -75,7 +70,6 @@ document.ready=function(){
     window.addEventListener("resize", newSize);
     
     function onComplete() {
-        
         $body.toggleClass('overflow-visable');
         svg.removeEventListener("touchstart", mouseHandler);
         svg.removeEventListener("touchend", mouseHandler);
@@ -86,6 +80,7 @@ document.ready=function(){
         TweenMax.to("#ring, #dot", 0.35, {attr:{r:0}, autoAlpha:0, ease:Linear.easeNone});
         TweenMax.set(svg, {cursor:"auto"});
         namePop.classList.add("name_pop--active");
+        
         setTimeout(function(){ elem.remove(); },600);
     }
     function logo() {
