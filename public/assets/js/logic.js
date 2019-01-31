@@ -70,8 +70,8 @@ document.ready=function(){
     window.addEventListener("resize", newSize);
     
     function onComplete() {
-        $body.removeClass('overflow-visable');
-        $body.toggleClass('user-select');
+        $body.toggleClass('overflow-visable');
+        $body.removeClass('user-select');
         svg.removeEventListener("touchstart", mouseHandler);
         svg.removeEventListener("touchend", mouseHandler);
         svg.removeEventListener("mousedown", mouseHandler);
