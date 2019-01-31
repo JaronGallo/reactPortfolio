@@ -5,6 +5,10 @@
     @include respond(phone){
         margin-bottom: 2rem;
     }
+    @include respond(phone) {
+        grid-column: col-start / col-end;
+        padding:0 2rem;
+    }
     
 }
 .info {
@@ -16,10 +20,7 @@
     height: 10rem;
     margin-bottom: 2rem;
     }
-    @include respond(phone) {
-        grid-column: col-start / col-end;
-        padding:0 2rem;
-    }
+    
     &__titles{
         grid-column: 1;
         &--1,
