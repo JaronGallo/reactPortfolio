@@ -100,6 +100,22 @@ html {
 body {
   box-sizing: border-box; }
 
+.user-select {
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */ }
+
+.overflow-hidden {
+  overflow: hidden; }
+
+.overflow-visable {
+  overflow: visible !important; }
+
 svg {
   transition: all .2s ease;
   position: absolute;
@@ -217,6 +233,10 @@ svg {
 
 body {
   font-family: 'Montserrat', sans-serif; }
+
+@media only screen and (max-width: 37.5em) {
+  .info__text {
+    line-height: 1.6em !important; } }
 
 .u-center-text {
   text-align: center !important; }

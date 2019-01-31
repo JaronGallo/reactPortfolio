@@ -1,6 +1,10 @@
 body {
- 
     font-family: 'Montserrat', sans-serif;
 }
 
+.info__text{
+    @include respond(phone) {
+        line-height: 1.6em !important;
+    } 
+}
 
