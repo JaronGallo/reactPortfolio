@@ -6,7 +6,8 @@ document.ready=function(){
         } else {
             $body = $('body');
             $('#landing').remove();
-            $body.toggleClass('user-select');
+            setTimeout(function(){$body.removeClass('user-select');},600);
+            
           return;
         }
         logo();
