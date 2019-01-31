@@ -2,12 +2,11 @@
     display: grid;
     grid-row: info-start / info-end;
     grid-column: main-start / main-end;
-    @include respond(phone){
-        margin-bottom: 2rem;
-    }
+    
     @include respond(phone) {
         grid-column: col-start / col-end;
         padding:0 4rem;
+        margin-bottom: 1rem;
     }
     
 }
