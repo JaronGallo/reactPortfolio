@@ -32,6 +32,7 @@
     
     $body = $('body');
     $body.toggleClass('overflow-hidden');
+    $body.toggleClass('user-select');
     var ratio = 0.5625;
     
    
