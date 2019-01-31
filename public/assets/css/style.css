@@ -577,7 +577,8 @@ body {
   grid-column: main-start / main-end; }
   @media only screen and (max-width: 37.5em) {
     .container-info {
-      margin-bottom: 2rem; } }
+      grid-column: col-start / col-end;
+      padding: 0 4rem; } }
 
 .info {
   display: grid;
@@ -588,7 +589,10 @@ body {
     .info {
       margin-top: 5rem;
       height: 10rem;
-      margin-bottom: 2rem; } }
+      margin-bottom: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .info {
+      height: 7rem; } }
   .info__titles {
     grid-column: 1; }
     .info__titles--1, .info__titles--2 {

@@ -18,6 +18,9 @@
     height: 10rem;
     margin-bottom: 1rem;
     }
+    @include respond(phone) {
+        height: 7rem;
+        }
     
     &__titles{
         grid-column: 1;
