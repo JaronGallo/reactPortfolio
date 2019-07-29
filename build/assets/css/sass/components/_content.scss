@@ -2,18 +2,25 @@
     display: grid;
     grid-row: content-start / content-end;
     grid-column: main-start / main-end;
-    animation: faze linear .2s;
+    
     @include respond(phone) {
         grid-column: col-start / col-end;
         padding:0 2rem;
     }
+}
+@media (hover: hover) {
+    .content:hover { 
+        transform: translateY(-2px);
+        box-shadow: 0 .5rem 1rem rgba(black, .3);
+    
+     }
 }
 .content {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     background-color: #fff;
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     transition: all .2s;
     box-shadow: 0 .5rem 1rem rgba(black, .1);
     border-radius: 2px;
@@ -23,12 +30,13 @@
     }
     @include respond(phone) {
         grid-template-rows: 200px 1fr;
+        
     }
     
-    &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 .5rem 1rem rgba(black, .3);
-    }
+    // &:hover {
+    //     transform: translateY(-2px);
+    //     box-shadow: 0 .5rem 1rem rgba(black, .3);
+    // }
     &__img--left {
         grid-column: 1;
         height: 377px;
@@ -122,6 +130,7 @@
         }
     }
     &__img--right {
+        
         grid-column: 2;
         height: 377px;
         width: 100%;

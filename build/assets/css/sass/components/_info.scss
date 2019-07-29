@@ -2,8 +2,10 @@
     display: grid;
     grid-row: info-start / info-end;
     grid-column: main-start / main-end;
-    @include respond(phone){
-        margin-bottom: 2rem;
+    
+    @include respond(phone) {
+        grid-column: col-start / col-end;
+        padding:0 5vw;
     }
     
 }
@@ -14,7 +16,12 @@
     margin-top: 3rem;
     @include respond(tab-port) {margin-top: 5rem;
     height: 10rem;
-    margin-bottom: 2rem;}
+    margin-bottom: 1rem;
+    }
+    @include respond(phone) {
+        height: 9rem;
+        }
+    
     &__titles{
         grid-column: 1;
         &--1,

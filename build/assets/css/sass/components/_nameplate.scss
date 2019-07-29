@@ -25,6 +25,7 @@
         margin-top: 1rem;
         width: 22rem;
         cursor: pointer;
+        
     }
     &__logo img {
         grid-row:1;
@@ -34,6 +35,9 @@
         height: 4rem;
         justify-content: center;
         margin-bottom: 1rem
+        }
+        @include respond(phone) {
+            margin-bottom: 2rem
         }
     }
      
