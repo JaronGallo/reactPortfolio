@@ -7,7 +7,7 @@
     "asyncawait": "^1.0.8",
     "autoprefixer": "^7.1.4",
     "axios": "^0.18.0",
-    "body-parser": "^1.19.2",
+    "body-parser": "^1.19.0",
     "concat": "^1.0.3",
     "concurrently": "^4.1.1",
     "dotenv": "^8.0.0",
