@@ -38,7 +38,7 @@
   },
   "main": "index.js",
   "license": "MIT",
-  "proxy": "http://jarongallo.com:80",
+  "proxy": "http://localhost:80",
   "devDependencies": {
     "babel-plugin-transform-async-to-generator": "^6.24.1"
   }
